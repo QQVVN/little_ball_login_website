@@ -64,6 +64,86 @@ input[type=password],
   -webkit-tap-highlight-color: transparent;
 }
 
+@keyframes simple {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes balls {
+  0% {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0, 0) rotate(360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1) rotate(0deg);
+  }
+}
+@keyframes balls_flash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes coins {
+  0% {
+    opacity: 0;
+    transform: scale(0.2, 0.2) translateY(-50%);
+  }
+  55% {
+    transform: scale(1, 1) translateY(5%);
+  }
+  70% {
+    transform: scale(1, 1) translateY(0%);
+  }
+  85% {
+    transform: scale(1, 1) translateY(5%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1) translateY(0%);
+  }
+}
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 html {
   font-family: Microsoft JhengHei;
   background: #002578;
@@ -95,6 +175,8 @@ html {
   position: absolute;
   background: url(../images/img.png) no-repeat;
   background-size: 100%;
+  animation-name: coins;
+  animation-duration: 1s;
 }
 .container .login .logo {
   width: 379px;

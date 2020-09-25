@@ -1,5 +1,187 @@
 @import "_reset_css.scss";
 
+@keyframes simple {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes logo {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
+@keyframes logo {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes balls {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale(0, 0) rotate(360deg);
+        transform: scale(0, 0) rotate(360deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) rotate(0deg);
+        transform: scale(1, 1) rotate(0deg);
+    }
+}
+
+@keyframes balls {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale(0, 0) rotate(360deg);
+        transform: scale(0, 0) rotate(360deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) rotate(0deg);
+        transform: scale(1, 1) rotate(0deg);
+    }
+}
+
+@-webkit-keyframes balls_flash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes balls_flash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes coins {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.2, 0.2) translateY(-50%);
+        transform: scale(0.2, 0.2) translateY(-50%);
+    }
+    55% {
+        -webkit-transform: scale(1, 1) translateY(5%);
+        transform: scale(1, 1) translateY(5%);
+    }
+    70% {
+        -webkit-transform: scale(1, 1) translateY(0%);
+        transform: scale(1, 1) translateY(0%);
+    }
+    85% {
+        -webkit-transform: scale(1, 1) translateY(5%);
+        transform: scale(1, 1) translateY(5%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateY(0%);
+        transform: scale(1, 1) translateY(0%);
+    }
+}
+
+@keyframes coins {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.2, 0.2) translateY(-50%);
+        transform: scale(0.2, 0.2) translateY(-50%);
+    }
+    55% {
+        -webkit-transform: scale(1, 1) translateY(5%);
+        transform: scale(1, 1) translateY(5%);
+    }
+    70% {
+        -webkit-transform: scale(1, 1) translateY(0%);
+        transform: scale(1, 1) translateY(0%);
+    }
+    85% {
+        -webkit-transform: scale(1, 1) translateY(5%);
+        transform: scale(1, 1) translateY(5%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1, 1) translateY(0%);
+        transform: scale(1, 1) translateY(0%);
+    }
+}
+
+@-webkit-keyframes showUp {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 html {
     font-family: Microsoft JhengHei;
     background: #002578;
@@ -31,10 +213,10 @@ html {
             position: absolute;
             background: url(../images/img.png) no-repeat;
             background-size: 100%;
-            // -webkit-animation-name: coins;
-            // animation-name: coins;
-            // -webkit-animation-duration: 1s;
-            // animation-duration: 1s;
+            -webkit-animation-name: coins;
+            animation-name: coins;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
         }
         .logo {
             width: 379px;
@@ -181,21 +363,9 @@ html {
                     color: #fff;
                     background: #8e0000;
                     box-shadow: none;
-                    background: -moz-linear-gradient(
-                        bottom,
-                        #e6b53a 0%,
-                        #8e0000 100%
-                    );
-                    background: -webkit-linear-gradient(
-                        bottom,
-                        #e6b53a 0%,
-                        #8e0000 100%
-                    );
-                    background: linear-gradient(
-                        to top,
-                        #e6b53a 0%,
-                        #8e0000 100%
-                    );
+                    background: -moz-linear-gradient(bottom, #e6b53a 0%, #8e0000 100%);
+                    background: -webkit-linear-gradient(bottom, #e6b53a 0%, #8e0000 100%);
+                    background: linear-gradient(to top, #e6b53a 0%, #8e0000 100%);
                 }
                 .c {
                     &:hover {

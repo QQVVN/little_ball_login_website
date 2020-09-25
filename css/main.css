@@ -90,16 +90,17 @@ html {
 .container .login .coins {
   width: 1154px;
   height: 620px;
-  margin: 130px 0 0 -140px;
+  top: 130px;
+  left: -140px;
   position: absolute;
-  top: 0;
   background: url(../images/img.png) no-repeat;
   background-size: 100%;
 }
 .container .login .logo {
   width: 379px;
   height: 179px;
-  margin: 57px 0 0 41px;
+  top: 57px;
+  left: 41px;
   background: url(../images/286.png) no-repeat;
   background-size: 100%;
   position: absolute;
@@ -108,8 +109,8 @@ html {
   position: absolute;
   width: 400px;
   height: 120px;
-  top: 385px;
-  left: 580px;
+  top: 358px;
+  left: 55px;
   font-size: 0;
   background-size: cover;
   box-sizing: border-box;
@@ -120,7 +121,7 @@ html {
 }
 .container .login .input-area .login-input {
   display: inline-block;
-  width: 250px;
+  width: 216px;
   vertical-align: middle;
   text-align: right;
   float: left;
@@ -153,12 +154,12 @@ html {
   font-size: 16px;
   line-height: 16px;
   padding: 1.2% 0% 1% 5%;
-  color: #370b02;
-  background: #fff;
+  color: #fff;
+  background: linear-gradient(to top, #657887 0%, #4c5963 100%);
   border-radius: 7px;
 }
 .container .login .input-area .login-input label input::-webkit-input-placeholder {
-  color: #370b02;
+  color: #fff;
 }
 .container .login .input-area .login-input label input:first-of-type {
   margin: 5px 0 6px 0;
@@ -183,25 +184,28 @@ html {
   background-position-y: 100%;
 }
 .container .login .input-area button {
-  width: 135px;
-  height: 85px;
+  width: 127px;
+  height: 88px;
   outline: 0;
   border: 1px solid #c48433;
   border-radius: 8px;
   box-sizing: border-box;
-  color: #6a1216;
+  color: #674125;
   font-size: 20px;
   font-weight: bold;
   margin: 4px 0 5px 15px;
-  background: #b03d01;
-  background: linear-gradient(to bottom, #b03d01 0%, #e9ae3a 5%, #fff7c4 27%, #b05c01 63%, #974e00 70%, #d08f28 85%, #782900 100%);
+  border: 1px solid #b8813d;
+  box-shadow: 1px 1px 5px 0px #faf5f0 inset;
+  background: #a84f00;
+  background: linear-gradient(to top, #a84f00 0%, #f9e6b7 11%, #bf7100 25%, #e5b94d 40%, #efd9a1 54%, #ffffff 67%, #efd9a1 81%, #a84f00 100%);
   cursor: pointer;
   float: left;
 }
 .container .login .input-area button:hover {
   color: #fff;
-  background: #410004;
-  background: linear-gradient(to bottom, #410004 0%, #680007 46%, #cf000c 98%);
+  background: #8e0000;
+  box-shadow: none;
+  background: linear-gradient(to top, #e6b53a 0%, #8e0000 100%);
 }
 .container .login .input-area button .c:hover {
   background-position: -276px 0;
@@ -209,7 +213,8 @@ html {
 .container .login .btn_area {
   position: absolute;
   font-size: 0;
-  margin: 290px 0 0 55px;
+  top: 290px;
+  left: 55px;
   width: 410px;
 }
 .container .login .btn_area .btn_icon {

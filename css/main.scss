@@ -50,7 +50,7 @@ html {
             width: 400px;
             height: 120px;
             top: 358px;
-            left: 55px;
+            left: 52px;
             font-size: 0;
             background-size: cover;
             -webkit-box-sizing: border-box;
@@ -204,11 +204,14 @@ html {
                 }
             }
         }
+        .c {
+            top: 316px;
+        }
         .btn_area {
             position: absolute;
             font-size: 0;
             top: 290px;
-            left: 55px;
+            left: 52px;
             width: 410px;
             .btn_icon {
                 display: inline-block;

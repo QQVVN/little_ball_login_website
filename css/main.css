@@ -110,7 +110,7 @@ html {
   width: 400px;
   height: 120px;
   top: 358px;
-  left: 55px;
+  left: 52px;
   font-size: 0;
   background-size: cover;
   box-sizing: border-box;
@@ -210,11 +210,14 @@ html {
 .container .login .input-area button .c:hover {
   background-position: -276px 0;
 }
+.container .login .c {
+  top: 316px;
+}
 .container .login .btn_area {
   position: absolute;
   font-size: 0;
   top: 290px;
-  left: 55px;
+  left: 52px;
   width: 410px;
 }
 .container .login .btn_area .btn_icon {
